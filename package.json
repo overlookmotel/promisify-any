@@ -1,0 +1,45 @@
+{
+  "name": "promisify-any",
+  "version": "0.0.0",
+  "description": "Promisify any of: callback function, sync function, generator, promise-returning function",
+  "main": "./lib/",
+  "author": {
+    "name": "Overlook Motel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overlookmotel/promisify-any.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overlookmotel/promisify-any/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "chai": "^2.3.0",
+	"jshint": "^2.7.0"
+  },
+  "keywords": [
+    "promise",
+    "promisify",
+    "any",
+    "callback",
+    "generator",
+    "sync",
+    "async"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/overlookmotel/promisify-any/raw/master/License"
+    }
+  ]
+}
