@@ -17,7 +17,14 @@ test:
 		make jshint && make teaser && ./node_modules/mocha/bin/mocha --check-leaks --colors -t 10000 --reporter $(REPORTER) $(TESTS); \
 	fi
 
+test-harmony:
+	@if [ "$$GREP" ]; then \
+		make jshint && make teaser && ./node_modules/mocha/bin/mocha --harmony --check-leaks --colors -t 10000 --reporter $(REPORTER) -g "$$GREP" $(TESTS); \
+	else \
+		make jshint && make teaser && ./node_modules/mocha/bin/mocha --harmony --check-leaks --colors -t 10000 --reporter $(REPORTER) $(TESTS); \
+	fi
+
 jshint:
 	./node_modules/.bin/jshint lib
 
-.PHONY: test
+.PHONY: test test-harmony

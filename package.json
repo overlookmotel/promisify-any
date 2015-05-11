@@ -34,7 +34,8 @@
     "async"
   ],
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "test-harmony": "make test-harmony"
   },
   "engines": {
     "node": ">=0.10.0"
