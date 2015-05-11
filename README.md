@@ -1,6 +1,6 @@
 # promisify-any.js
 
-# Promisify any of: callback function, sync function, generator, promise-returning function
+# Promisify any of: callback function, sync function, generator function, promise-returning function
 
 ## Current status
 
