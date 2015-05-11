@@ -1,11 +1,15 @@
 script:
-  - "make test"
+  - "make $TEST_SUITE"
 
 language: node_js
 
 node_js:
   - "0.10"
   - "0.12"
+
+env:
+  - TEST_SUITE=test
+  - TEST_SUITE=test-harmony
 
 branches:
   only:
