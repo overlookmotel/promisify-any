@@ -52,7 +52,7 @@
   "sub":false,
   "supernew":false,
   "validthis":false,
-  "noyield":false,
+  "noyield":true,
 
   // environment options
   "node":true,
@@ -61,5 +61,6 @@
   },
 
   "predef": [
+    "-Promise"
   ]
 }
