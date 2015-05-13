@@ -4,6 +4,6 @@
 
 * Initial release
 
-## Next
+## 0.0.2
 
 * README contribution section
