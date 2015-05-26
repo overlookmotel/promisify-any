@@ -11,6 +11,18 @@ env:
   - TEST_SUITE=test
   - TEST_SUITE=test-harmony
 
+matrix:
+  fast_finish: true
+  include:
+    - node_js: "0.10"
+      env:
+        - TEST_SUITE=test
+        - COVERAGE=true
+  allow_failures:
+    - env:
+        - TEST_SUITE=test
+        - COVERAGE=true
+
 branches:
   only:
     - master

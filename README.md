@@ -8,6 +8,7 @@
 [![Build Status](https://img.shields.io/travis/overlookmotel/promisify-any/master.svg)](http://travis-ci.org/overlookmotel/promisify-any)
 [![Dependency Status](https://img.shields.io/david/overlookmotel/promisify-any.svg)](https://david-dm.org/overlookmotel/promisify-any)
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/promisify-any.svg)](https://david-dm.org/overlookmotel/promisify-any)
+[![Coverage Status](https://img.shields.io/coveralls/overlookmotel/promisify-any/master.svg)](https://coveralls.io/r/overlookmotel/promisify-any)
 
 All features are tested. API may be subject to alteration in future versions (v0.1.0 or later).
 
@@ -188,7 +189,9 @@ NB Generators are only supported in node v0.11 upwards and require node to be ru
 
 ## Tests
 
-Use `npm test` to run the tests.
+Use `npm test` to run the tests. Use `npm run cover` to check coverage.
+
+Coverage does not currently use "harmony" mode and so does not cover the generator tests.
 
 ## Changelog
 

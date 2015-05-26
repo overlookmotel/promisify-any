@@ -22,7 +22,9 @@
   "devDependencies": {
     "mocha": "^2.2.4",
     "chai": "^2.3.0",
-	"jshint": "^2.7.0"
+	"jshint": "^2.7.0",
+    "istanbul": "^0.3.14",
+    "coveralls": "^2.11.2"
   },
   "keywords": [
     "promise",
@@ -35,7 +37,8 @@
   ],
   "scripts": {
     "test": "make test",
-    "test-harmony": "make test-harmony"
+    "test-harmony": "make test-harmony",
+    "cover": "make cover"
   },
   "engines": {
     "node": ">=0.10.0"
