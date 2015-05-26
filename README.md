@@ -4,8 +4,10 @@
 
 ## Current status
 
-[![Build Status](https://secure.travis-ci.org/overlookmotel/promisify-any.png?branch=master)](http://travis-ci.org/overlookmotel/promisify-any)
-[![Dependency Status](https://david-dm.org/overlookmotel/promisify-any.png)](https://david-dm.org/overlookmotel/promisify-any)
+[![NPM version](https://img.shields.io/npm/v/promisify-any.svg)](https://www.npmjs.com/package/promisify-any)
+[![Build Status](https://img.shields.io/travis/overlookmotel/promisify-any/master.svg)](http://travis-ci.org/overlookmotel/promisify-any)
+[![Dependency Status](https://img.shields.io/david/overlookmotel/promisify-any.svg)](https://david-dm.org/overlookmotel/promisify-any)
+[![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/promisify-any.svg)](https://david-dm.org/overlookmotel/promisify-any)
 
 All features are tested. API may be subject to alteration in future versions (v0.1.0 or later).
 
