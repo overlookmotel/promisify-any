@@ -16,8 +16,4 @@ branches:
     - master
     - dev
 
-cache:
-  directories:
-    - node_modules
-
 sudo: false

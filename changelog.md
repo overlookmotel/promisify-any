@@ -7,3 +7,7 @@
 ## 0.0.2
 
 * README contribution section
+
+## Next
+
+* Disable Travis dependency cache
