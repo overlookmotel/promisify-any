@@ -8,7 +8,7 @@
 
 * README contribution section
 
-## Next
+## 0.0.3
 
 * Test code coverage & Travis sends to coveralls
 * Disable Travis dependency cache
