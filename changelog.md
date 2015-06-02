@@ -13,3 +13,7 @@
 * Test code coverage & Travis sends to coveralls
 * Disable Travis dependency cache
 * Update README badges to use shields.io
+
+## Next
+
+* README typos and additional example

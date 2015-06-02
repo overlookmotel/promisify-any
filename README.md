@@ -80,7 +80,7 @@ fns = fns.map(function(fn) {return promisify(fn, 2)});
 
 ```
 
-Internally, `promisify-any` works out if an input function uses a callback or not, based on the number of arguments the function has. So it needs to know in advance how many arguments it *should* have!
+`promisify-any` works out if an input function uses a callback or not, based on the number of arguments the function has. So it needs to know in advance how many arguments it *should* have!
 
 #### Async callback functions
 
@@ -95,8 +95,8 @@ var fn = promisify(function(cb) {
     });
 });
 
-fn().then(function(res) {
-    // res = 123
+fn().then(function(result) {
+    // result = 123
 });
 ```
 
@@ -109,8 +109,8 @@ var fn = promisify(function(x, y, cb) {
     });
 }, 2);
 
-fn(3, 4).then(function(res) {
-    // res = 7
+fn(3, 4).then(function(result) {
+    // result = 7
 });
 ```
 
@@ -137,8 +137,8 @@ var fn = promisify(function(x, y) {
     return x + y;
 }, 2);
 
-fn(3, 4).then(function(res) {
-    // res = 7
+fn(3, 4).then(function(result) {
+    // result = 7
 });
 ```
 
@@ -161,8 +161,8 @@ var fn = promisify(function(x, y) {
     return Promise.resolve(x + y);
 }, 2);
 
-fn(3, 4).then(function(res) {
-    // res = 7
+fn(3, 4).then(function(result) {
+    // result = 7
 });
 ```
 
@@ -171,21 +171,67 @@ fn(3, 4).then(function(res) {
 Generator functions are wrapped using [co](https://www.npmjs.com/package/co) (`co.wrap()`) so that they can yield promises. The resulting function also returns a promise.
 
 ```js
-var fn = promisify(function(x, y) {
-    var res = yield [
+var fn = promisify(function *(x, y) {
+    var values = yield [
         Promise.resolve(x * 10),
         Promise.resolve(y * 10)
     ];
 
-    return res[0] + res[1];
+    return values[0] + values[1];
 }, 2);
 
-fn(3, 4).then(function(res) {
-    // res = 70
+fn(3, 4).then(function(result) {
+    // result = 70
 });
 ```
 
 NB Generators are only supported in node v0.11 upwards and require node to be run with the `--harmony` flag.
+
+#### Mixing sync and promise returns
+
+In this example, a user is loaded from the database, but records are cached in a local variable, and the cached version is used first if it exists. The function may do any of:
+
+* return a promise that is asynchronously resolved
+* return a promise that is asynchronously rejected
+* return a result synchronously (from the cache)
+* throw synchronously
+
+```js
+var cache = [];
+function getUserFromDb(id) {
+    if (!id) throw new Error('Must provide id');
+
+    if (cache[id]) return cache[id];
+
+    // userModel.find() returns a promise
+    return userModel.find( { where: { id: id } } ).then(function(result) {
+        if (!result) return Promise.reject(new Error('User not found'));
+
+        cache[id] = result;
+        return result;
+    };
+}
+```
+
+This will not work if the function returns synchronously:
+
+```js
+getUserFromDb(123).then(function(result) {
+    // do something with the result
+});
+```
+
+But this will always work:
+
+```js
+getUserFromDb = promisify(getUserFromDb, 1);
+
+getUserFromDb(123).then(function(result) {
+    // do something with the result
+});
+```
+
+It's less cumbersome to write functions in this way - returning/throwing either synchronously or asynchronously.
 
 ## Tests
 
