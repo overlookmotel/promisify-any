@@ -14,6 +14,6 @@
 * Disable Travis dependency cache
 * Update README badges to use shields.io
 
-## Next
+## 0.0.4
 
 * README typos and additional example
