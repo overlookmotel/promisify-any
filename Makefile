@@ -41,7 +41,7 @@ jshint:
 
 cover:
 	make teaser; \
-	./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(TESTS); \
+	node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(TESTS); \
 	rm -rf coverage
 
 coveralls:
@@ -51,7 +51,7 @@ coveralls:
 
 # coveralls-harmony does not work
 coveralls-harmony:
-	./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --harmony --report lcovonly -- -R spec; \
+	node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --harmony --report lcovonly -- -R spec; \
 	cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js; \
 	rm -rf ./coverage
 
