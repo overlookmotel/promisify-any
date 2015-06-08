@@ -18,6 +18,6 @@
 
 * README typos and additional example
 
-## Next
+## 0.0.5
 
 * Test coverage runs in harmony mode
