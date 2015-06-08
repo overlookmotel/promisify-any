@@ -21,3 +21,7 @@
 ## 0.0.5
 
 * Test coverage runs in harmony mode
+
+## Next
+
+* README update

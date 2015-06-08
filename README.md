@@ -235,9 +235,8 @@ It's less cumbersome to write functions in this way - returning/throwing either 
 
 ## Tests
 
-Use `npm test` to run the tests. Use `npm run cover` to check coverage.
-
-Coverage does not currently use "harmony" mode and so does not cover the generator tests.
+Use `npm test` to run the tests or `npm run test-harmony` to include generator tests.
+Use `npm run cover` to check coverage.
 
 ## Changelog
 
