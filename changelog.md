@@ -26,7 +26,7 @@
 
 * README update
 
-## Next
+## 0.1.0
 
 * Use co-bluebird for wrapping generators
 * Move generator-supported to dev dependencies

@@ -1,6 +1,6 @@
 {
   "name": "promisify-any",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Promisify any of: callback function, sync function, generator function, promise-returning function",
   "main": "./lib/",
   "author": {
