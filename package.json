@@ -16,10 +16,10 @@
   "dependencies": {
     "bluebird": "^2.9.25",
     "co": "^4.5.4",
-    "generator-supported": "0.0.1",
     "is-generator": "1.0.0"
   },
   "devDependencies": {
+    "generator-supported": "0.0.1",
     "mocha": "^2.2.4",
     "chai": "^2.3.0",
 	"jshint": "^2.7.0",

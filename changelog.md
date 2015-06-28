@@ -25,3 +25,7 @@
 ## 0.0.6
 
 * README update
+
+## Next
+
+* Move generator-supported to dev dependencies
