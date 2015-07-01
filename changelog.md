@@ -30,3 +30,7 @@
 
 * Use co-bluebird for wrapping generators
 * Move generator-supported to dev dependencies
+
+## Next
+
+* Coveralls runs generator tests
