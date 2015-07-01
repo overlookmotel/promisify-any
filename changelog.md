@@ -31,7 +31,7 @@
 * Use co-bluebird for wrapping generators
 * Move generator-supported to dev dependencies
 
-## Next
+## 1.0.0
 
 * Coveralls runs generator tests
 * README update
