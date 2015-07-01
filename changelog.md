@@ -34,3 +34,4 @@
 ## Next
 
 * Coveralls runs generator tests
+* README update

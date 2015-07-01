@@ -10,7 +10,7 @@
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/promisify-any.svg)](https://david-dm.org/overlookmotel/promisify-any)
 [![Coverage Status](https://img.shields.io/coveralls/overlookmotel/promisify-any/master.svg)](https://coveralls.io/r/overlookmotel/promisify-any)
 
-All features are tested. API may be subject to alteration in future versions (v0.1.0 or later).
+API is stable and all features are tested.
 
 ## What is it for?
 
