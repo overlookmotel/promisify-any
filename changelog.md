@@ -35,3 +35,7 @@
 
 * Coveralls runs generator tests
 * README update
+
+## Next
+
+* Update dependencies
