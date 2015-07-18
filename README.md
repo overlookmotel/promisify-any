@@ -233,6 +233,27 @@ getUserFromDb(123).then(function(result) {
 
 It's less cumbersome to write functions in this way - returning/throwing either synchronously or asynchronously.
 
+### `promisify.generators(object [, options])`
+
+Promisifies all methods of the object which are generators.
+
+```js
+var obj = {
+    addOne: function *(x) {
+        return yield Promise.resolve(x + 1);
+    },
+    double: function *(x) {
+        return yield Promise.resolve(x * 2);
+    }
+};
+
+promisify.generators(obj);
+
+obj.addOne(10).then(obj.double).then(function(result) {
+    // result = 22
+});
+```
+
 ## Tests
 
 Use `npm test` to run the tests or `npm run test-harmony` to include generator tests.

@@ -39,3 +39,7 @@
 ## 1.0.1
 
 * Update dependencies
+
+## Next
+
+* `generators()` method

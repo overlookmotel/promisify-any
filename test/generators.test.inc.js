@@ -149,3 +149,22 @@ describe('generator function', function() {
 		});
 	});
 });
+
+describe('promisify.generators()', function() {
+	it('promisifies all generators', function() {
+		var obj = {
+		    addOne: function *(x) {
+		        return yield Promise.resolve(x + 1);
+		    },
+		    double: function *(x) {
+		        return yield Promise.resolve(x * 2);
+		    }
+		};
+
+		promisify.generators(obj);
+
+		return obj.addOne(10).then(obj.double).then(function(r) {
+		    expect(r).to.equal(22);
+		});
+	});
+});
