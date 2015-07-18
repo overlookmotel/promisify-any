@@ -43,3 +43,7 @@
 ## 1.1.0
 
 * `generators()` method
+
+## Next
+
+* Update `is-generator` dependency
