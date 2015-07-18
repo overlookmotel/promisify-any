@@ -40,6 +40,6 @@
 
 * Update dependencies
 
-## Next
+## 1.1.0
 
 * `generators()` method
