@@ -47,3 +47,7 @@
 ## 1.1.1
 
 * Update `is-generator` dependency
+
+## Next
+
+* Update dev dependencies

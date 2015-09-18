@@ -20,11 +20,11 @@
   },
   "devDependencies": {
     "generator-supported": "0.0.1",
-    "mocha": "^2.2.4",
-    "chai": "^2.3.0",
-	"jshint": "^2.7.0",
-    "istanbul": "^0.3.14",
-    "coveralls": "^2.11.2"
+    "mocha": "^2.3.2",
+    "chai": "^3.2.0",
+    "jshint": "^2.8.0",
+    "istanbul": "^0.3.19",
+    "coveralls": "^2.11.4"
   },
   "keywords": [
     "promise",
