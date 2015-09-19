@@ -50,4 +50,5 @@
 
 ## Next
 
+* Update `bluebird` dependency
 * Update dev dependencies

@@ -14,8 +14,8 @@
     "url": "https://github.com/overlookmotel/promisify-any/issues"
   },
   "dependencies": {
-    "bluebird": "^2.9.32",
     "co-bluebird": "^0.1.0",
+    "bluebird": "^2.10.0",
     "is-generator": "^1.0.2"
   },
   "devDependencies": {
