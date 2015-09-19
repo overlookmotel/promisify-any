@@ -53,3 +53,7 @@
 * Update `co-bluebird` dependency
 * Update `bluebird` dependency
 * Update dev dependencies
+
+## Next
+
+* Update `co-bluebird` dependency

@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "bluebird": "^2.10.0",
-    "co-bluebird": "^1.0.1",
+    "co-bluebird": "^1.1.0",
     "is-generator": "^1.0.2"
   },
   "devDependencies": {
