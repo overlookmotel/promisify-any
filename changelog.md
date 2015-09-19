@@ -48,7 +48,7 @@
 
 * Update `is-generator` dependency
 
-## Next
+## 1.2.0
 
 * Update `co-bluebird` dependency
 * Update `bluebird` dependency
