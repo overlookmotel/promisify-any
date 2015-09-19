@@ -54,6 +54,6 @@
 * Update `bluebird` dependency
 * Update dev dependencies
 
-## Next
+## 1.2.1
 
 * Update `co-bluebird` dependency
