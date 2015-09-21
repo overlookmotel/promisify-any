@@ -8,7 +8,8 @@ var chai = require('chai'),
 	expect = chai.expect,
 	Promise = require('bluebird'),
 	generatorSupported = require('generator-supported'),
-	promisify = require('../lib/');
+	promisify = require('../lib/'),
+	FakePromise = require('./fakePromise');
 
 // init
 chai.config.includeStack = true;
@@ -364,3 +365,22 @@ if (generatorSupported) {
 		it('works');
 	});
 }
+
+describe('use method uses supplied promise implementation', function() {
+	it('with function', function() {
+		var usePromisify = promisify.use(FakePromise);
+
+		var fn = usePromisify(function() {
+			return Promise.resolve();
+		});
+
+		var p = fn();
+		expect(p).to.be.instanceof(FakePromise);
+	});
+
+	if (generatorSupported) {
+		require('./generatorsUse.test.inc.js');
+	} else {
+		it('with generator');
+	}
+});

@@ -57,3 +57,7 @@
 ## 1.2.1
 
 * Update `co-bluebird` dependency
+
+## Next
+
+* `.use()` method
