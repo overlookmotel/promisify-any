@@ -233,7 +233,7 @@ getUserFromDb(123).then(function(result) {
 
 It's less cumbersome to write functions in this way - returning/throwing either synchronously or asynchronously.
 
-### `promisify.generators(object [, options])`
+### `promisify.generators(object)`
 
 Promisifies all methods of the object which are generators.
 

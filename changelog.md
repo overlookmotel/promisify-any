@@ -67,3 +67,7 @@
 
 Breaking changes:
 * To set the Promise implementation used, instead of setting `promisify.Promise` property, use `.use(Promise)`
+
+## Next
+
+* README
