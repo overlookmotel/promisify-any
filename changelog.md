@@ -58,7 +58,7 @@
 
 * Update `co-bluebird` dependency
 
-## Next
+## 2.0.0
 
 * `.use()` method
 * Remove `.Promise` and `.co` properties
