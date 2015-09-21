@@ -63,3 +63,4 @@
 * `.use()` method
 * Remove `.Promise` and `.co` properties
 * Remove `.defaultNumArgs` property
+* README

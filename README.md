@@ -254,6 +254,22 @@ obj.addOne(10).then(obj.double).then(function(result) {
 });
 ```
 
+### `promisify.use(Promise)`
+
+Creates a new instance of `promisify-any`, which uses the Promise implementation provided.
+
+```js
+var Bluebird = require('bluebird');
+var promisify = require('promisify-any').use(Bluebird);
+
+// now use `promisify-any` in the usual way
+var fn = promisify(function() {});
+
+var p = fn();
+
+console.log(p instanceof Bluebird); // true
+```
+
 ## Tests
 
 Use `npm test` to run the tests or `npm run test-harmony` to include generator tests.
