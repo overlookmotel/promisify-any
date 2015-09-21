@@ -61,3 +61,4 @@
 ## Next
 
 * `.use()` method
+* Remove `.Promise` and `.co` properties

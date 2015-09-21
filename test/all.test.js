@@ -30,7 +30,7 @@ describe('callback function', function() {
 		var fn = promisify(f);
 
 		var promise = fn();
-		expect(promise).to.be.instanceof(promisify.Promise);
+		expect(promise).to.be.instanceof(Promise);
 		return promise;
 	});
 
@@ -161,7 +161,7 @@ describe('sync function', function() {
 		var fn = promisify(f);
 
 		var promise = fn();
-		expect(promise).to.be.instanceof(promisify.Promise);
+		expect(promise).to.be.instanceof(Promise);
 		return promise;
 	});
 
@@ -265,7 +265,7 @@ describe('promise-returning function', function() {
 		var fn = promisify(f);
 
 		var promise = fn();
-		expect(promise).to.be.instanceof(promisify.Promise);
+		expect(promise).to.be.instanceof(Promise);
 		return promise;
 	});
 
