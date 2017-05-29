@@ -27,5 +27,6 @@ branches:
   only:
     - master
     - dev
+    - /^greenkeeper/.*$/
 
 sudo: false
