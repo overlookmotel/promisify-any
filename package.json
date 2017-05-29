@@ -14,16 +14,16 @@
     "url": "https://github.com/overlookmotel/promisify-any/issues"
   },
   "dependencies": {
-    "bluebird": "^2.10.0",
+    "bluebird": "^3.5.0",
     "co-bluebird": "^1.1.0",
     "is-generator": "^1.0.2"
   },
   "devDependencies": {
     "generator-supported": "0.0.1",
-    "mocha": "^2.3.2",
-    "chai": "^3.2.0",
+    "mocha": "^3.4.2",
+    "chai": "^4.0.0",
     "jshint": "^2.8.0",
-    "istanbul": "^0.3.19",
+    "istanbul": "^0.4.5",
     "coveralls": "^2.11.4"
   },
   "keywords": [
