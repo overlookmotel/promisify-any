@@ -1,5 +1,7 @@
 # promisify-any.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/promisify-any.svg)](https://greenkeeper.io/)
+
 # Promisify any of: callback function, sync function, generator function, promise-returning function
 
 ## Current status
